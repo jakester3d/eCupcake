@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eCupcake</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_title">Send a Cupcake Message!</string>
+    <string name="main_radio_layer0">Background</string>
+    <string name="main_radio_layer1">Cake</string>
+    <string name="main_radio_layer2">Frosting</string>
+    <string name="main_radio_layer3">Toppings</string>
+    <string name="main_edit_phrase_hint">Short message here</string>
+    <string name="main_button_update">Update</string>
+    <string name="share">Share</string>
+</resources>

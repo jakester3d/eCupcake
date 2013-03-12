@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phrases_array">
+        <item> </item>
+		<item>HAPPY BIRTHDAY!</item>
+		<item>I LOVE YOU!</item>
+		<item>THINKING OF YOU!</item>
+		<item>MISS YOU!</item>
+		<item>LOL!</item>
+		<item>GET WELL SOON!</item>
+		<item>SEE YOU SOON!</item>
+
+	</string-array></resources>

@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dip"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:layout_marginTop="15dip"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/main_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/main_title"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+        
+	<com.filedance.ecupcake.StackView
+	    android:id="@+id/main_stack_view"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/main_txt_title"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_marginBottom="10dip"
+	    android:layout_marginRight="10dip" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_alignTop="@id/main_stack_view"
+	    android:layout_toRightOf="@id/main_stack_view"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+    
+		<RadioButton
+	        android:id="@+id/main_radio0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_radio_layer0"
+	        android:onClick="onRadioButtonClicked"
+	        android:tag="0" />
+	
+	    <RadioButton
+	        android:id="@+id/main_radio1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_radio_layer1"
+	        android:onClick="onRadioButtonClicked"
+	        android:tag="1" />
+	
+	    <RadioButton
+	        android:id="@+id/main_radio2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_radio_layer2"
+	        android:onClick="onRadioButtonClicked"
+	        android:tag="2" />
+	
+	    <RadioButton
+	        android:id="@+id/main_radio3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_radio_layer3"
+	        android:onClick="onRadioButtonClicked"
+	        android:tag="3" />
+	</RadioGroup>
+
+	<TableLayout 
+	    android:id="@+id/main_table"
+	    android:layout_toRightOf="@id/radio_group"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dip"
+	    android:layout_marginBottom="10dip" >
+
+	    <TableRow
+	        android:id="@+id/main_table_row1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+	
+	        <ImageView
+	            android:id="@+id/main_button00"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background00"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="0" />
+	
+	        <ImageView
+	            android:id="@+id/main_button01"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background01"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="1" />
+	
+	        <ImageView
+	            android:id="@+id/main_button02"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background02"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="2" />
+	
+	        <ImageView
+	            android:id="@+id/main_button03"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background03"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="3" />
+	
+	    </TableRow>
+	
+	    <TableRow
+	        android:id="@+id/main_table_row2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dip" >
+	
+	        <ImageView
+	            android:id="@+id/main_button04"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background00"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="4" />
+	
+	        <ImageView
+	            android:id="@+id/main_button05"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background02"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="5" />
+	
+	        <ImageView
+	            android:id="@+id/main_button06"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background02"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="6" />
+	
+	        <ImageView
+	            android:id="@+id/main_button07"
+	            android:layout_width="70dip"
+	            android:layout_height="50dip"
+	            android:src="@drawable/background03"
+	            android:clickable="true"
+	            android:onClick="onImageViewClicked"
+	        	android:tag="7" />
+	
+	    </TableRow>
+	
+	</TableLayout>
+
+    <Button
+        android:id="@+id/main_btn_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Sex"
+        android:onClick="onSexButtonClicked" />
+    
+	<Spinner
+    	android:id="@+id/main_spinner_phrase"
+    	android:layout_alignParentLeft="true"
+    	android:layout_below="@id/main_stack_view"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" />
+    
+    <EditText
+        android:id="@+id/main_edit_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/main_spinner_phrase"
+        android:layout_alignBaseline="@id/main_spinner_phrase"
+        android:ems="10"
+        android:hint="@string/main_edit_phrase_hint"
+        android:inputType="textShortMessage"
+        android:imeOptions="actionDone" />
+
+    <Button
+        android:id="@+id/main_button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/main_edit_phrase"
+        android:layout_alignBaseline="@id/main_edit_phrase"
+        android:text="@string/main_button_update"
+        android:onClick="onUpdateButtonClicked" />
+
+</RelativeLayout>

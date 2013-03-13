@@ -6,7 +6,7 @@
     android:layout_marginLeft="15dip"
     android:layout_marginRight="15dip"
     android:layout_marginTop="15dip"
-    tools:context=".MainActivity" >
+    tools:context=".ECupcakeActivity" >
 
     <TextView
         android:id="@+id/main_txt_title"

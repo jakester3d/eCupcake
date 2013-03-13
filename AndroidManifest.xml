@@ -8,13 +8,7 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
     
-    <!-- saving to MediaStore requires the permission WRITE_EXTERNAL_STORAGE -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.RECEIVE_MMS" />
-	<uses-permission android:name="android.permission.SEND_SMS" />
-	<uses-permission android:name="android.permission.RECEIVE_SMS" />
-    
-    <!-- only needed if sending SMS directly, not letting the user choose the app -->
     <uses-permission android:name="android.permission.SEND_SMS"/>
     
     <application
@@ -24,7 +18,7 @@
         android:theme="@style/AppTheme" >
                 
         <activity
-            android:name="com.filedance.ecupcake.MainActivity"
+            android:name="com.filedance.ecupcake.ECupcakeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,9 +37,5 @@
             </intent-filter>
 
         </activity>
-
-    </application>
-    
-
-
+   </application>
 </manifest>
